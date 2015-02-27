@@ -1,0 +1,11 @@
+body{
+  background-color: #B4D7FA
+}
+h1{
+  font-family: "Comic Sans MS";
+}
+article{
+  display: inline-block; 
+  margin-left: 20px; 
+  margin-right: 20px;
+}
