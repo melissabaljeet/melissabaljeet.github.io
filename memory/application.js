@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var click_count = 0;
-  var myarray = ["1","1","2","2","3","3"];
+  var myarray = ["1","1","2","2","3","3","4","4","5","5","6","6","7","7","8","8","9","9","10","10"];
   for(i in myarray){
     $('#card_holder').append('<div class="card"><p>'+ myarray[i]+'</p></div>');
   }                                       
