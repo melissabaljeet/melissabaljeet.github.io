@@ -8,7 +8,7 @@ $(document).ready(function(){
     $('.card').on("click", function(){
         if (click_count == 0) {
         $(this).find('p').css('opacity', 1);
-        }}
+        }})
     $('.card').on("click", function(){
       if (click_count== 1){
        $(this).find('p').css('opacity', 1);
