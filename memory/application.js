@@ -17,7 +17,10 @@ $(document).ready(function(){
             $(this).find('p').css('opacity', 1).addClass('clicked');
             value2=$(this).find('p').html();
             click_count=0;
-            if(value1!= value2){
+            if(value1 == value2){
+              $('.clicked').css('opacity', 1).removeClass('clicked').addClass('correct');
+            }
+            else{
                 $('.clicked').css('opacity', 0).removeClass('clicked');
             }
         }
