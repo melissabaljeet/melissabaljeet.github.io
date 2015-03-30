@@ -1,0 +1,19 @@
+h1, h3, p {
+  text-align: center;
+}
+input, button {
+  display:inline-block;
+}
+
+#input_holder {
+  width: 215px;
+  margin: 0 auto;
+}
+
+#feedback {
+  height: 30px;
+}
+
+#guess_counter{
+  font-style: italic;
+}
