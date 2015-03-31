@@ -8,17 +8,17 @@ console.log("computer guess = "+randomNumber);
     var guess= parseInt($('input').val());
     console.log(guess);
     //and compare this guess to the random number that the computer picked
-    //if the user guessed the correct number...
-    // if (guess=== randomNumber){
-    //   //what happens if the guess is correct?
-    //       return ("You're right!")} 
-    // //if the user guessed too high...
-    // else if (guess < randomNumber){
-    //   //update the 'feedback' paragraph to tell them to guess lower
-    //         return("Guess lower")}
-    // //otherwise, the user guessed too low...
-    // else {
-    //   //update the 'feedback' paragraph to tell them to guess higher
-    //         return("Guess higher")}
+    // if the user guessed the correct number...
+    if (guess=== randomNumber){
+      //what happens if the guess is correct?
+           $('#feedback').append("You're right!")} 
+    //if the user guessed too high...
+    else if (guess < randomNumber){
+      //update the 'feedback' paragraph to tell them to guess lower
+            return("Guess lower")}
+    //otherwise, the user guessed too low...
+    else {
+      //update the 'feedback' paragraph to tell them to guess higher
+            return("Guess higher")}
   });
 });
