@@ -15,10 +15,10 @@ console.log("computer guess = "+randomNumber);
     //if the user guessed too high...
     else if (guess < randomNumber){
       //update the 'feedback' paragraph to tell them to guess lower
-            return("Guess lower")}
+            $('feedback').append("Guess lower")}
     //otherwise, the user guessed too low...
     else {
       //update the 'feedback' paragraph to tell them to guess higher
-            return("Guess higher")}
+            $('feedback').append("Guess higher")}
   });
 });
