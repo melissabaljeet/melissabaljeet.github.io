@@ -13,7 +13,7 @@ console.log("computer guess = "+randomNumber);
       //what happens if the guess is correct?
            $('#feedback').append("You're right!")} 
     //if the user guessed too high...
-    else if (guess < randomNumber){
+    else if (guess > randomNumber){
       //update the 'feedback' paragraph to tell them to guess lower
             $('feedback').append("Guess lower")}
     //otherwise, the user guessed too low...
