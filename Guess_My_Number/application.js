@@ -12,19 +12,16 @@ console.log("computer guess = "+randomNumber);
     // if the user guessed the correct number...
     if (guess === randomNumber){
       //what happens if the guess is correct
-           $(this).find('guess_counter').css('opacity',1);  
            $('#feedback').empty(); 
            $('#feedback').append("You're right!")} 
     //if the user guessed too high...
     else if (guess > randomNumber){
       //update the 'feedback' paragraph to tell them to guess lower
-            $(this).find('guess_counter').css('opacity',1)
             $('#feedback').empty(); 
             $('#feedback').append("Guess lower")}
     //otherwise, the user guessed too low...
     else {
       //update the 'feedback' paragraph to tell them to guess higher
-            $(this).find('guess_counter').css('opacity',1)
             $('#feedback').empty();
             $('#feedback').append("Guess higher")}
   });
