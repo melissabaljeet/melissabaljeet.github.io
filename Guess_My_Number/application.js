@@ -7,7 +7,6 @@ console.log("computer guess = "+randomNumber);
     //save their guess as a variable
     var guess= parseInt($('input').val());
     console.log(guess);
-    $('#guess_counter')= 0;
     //and compare this guess to the random number that the computer picked
     // if the user guessed the correct number...
     if (guess === randomNumber){
