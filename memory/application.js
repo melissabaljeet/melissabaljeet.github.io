@@ -14,12 +14,14 @@ $(document).ready(function(){
             click_count=1;
         }
         else{
-            $(this).find('p').css('opacity', 1).addClass('clicked');
+          //Adds another group so you can seperate the clicked from the not clicked; 
+            $(this).find('p').css('opacity', 1).addClass('clicked'); 
             value2=$(this).find('p').html();
             click_count=0;
             if(value1 == value2){
               $('.clicked').css('opacity', 1).removeClass('clicked').addClass('correct');
             }
+            // removes class clicked so the game could go back to normal;
             else{
                 $('.clicked').css('opacity', 0).removeClass('clicked');
             }
