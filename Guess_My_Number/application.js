@@ -1,7 +1,7 @@
 $(document).ready(function(){
   //find a way for the program to choose a random number between 1 and 100, save this as a variable
-var randomNumber = Math.floor(Math.random()*100);
-console.log("computer guess = "+randomNumber);
+var randomNumber = Math.floor(Math.random()*100); // rounds the randomn number and makes it above decimals between 1-10
+console.log("computer guess = "+randomNumber); // chooses the randomn number
   //when the player clicks on the 'guess' button
   $('button').on('click', function(){
     //save their guess as a variable
@@ -18,11 +18,11 @@ console.log("computer guess = "+randomNumber);
     else if (guess > randomNumber){
       //update the 'feedback' paragraph to tell them to guess lower
             $('#feedback').empty(); 
-            $('#feedback').append("Guess lower")}
+            $('#feedback').append("Guess lower")} // allows the player to know their answer is too high
     //otherwise, the user guessed too low...
     else {
       //update the 'feedback' paragraph to tell them to guess higher
             $('#feedback').empty();
-            $('#feedback').append("Guess higher")}
+            $('#feedback').append("Guess higher")} //hints to the player that their answer is too low;
   });
 });
