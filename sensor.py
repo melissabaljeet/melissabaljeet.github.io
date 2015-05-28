@@ -14,8 +14,7 @@ print us_dist(15)
 for i in range(1, 10):
   while us_dist(15) >= 20:
     fwd() 
-  random (1,2)
-  if 1:
+  if random(1,2) == 1:
     turn_right()
   else:
     turn_left()
