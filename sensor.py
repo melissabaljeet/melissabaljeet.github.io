@@ -13,8 +13,11 @@ def turn_left():
 print us_dist(15)
 for i in range(1, 10):
   while us_dist(15) >= 20:
+    servo(90)
     fwd() 
-  if random(1,2) == 1:
+  if us_dist(15) > 20:
+    servo(180)
     turn_right()
-  else:
+  else us_dist(15) < 20:
+    servo(0)
     turn_left()
